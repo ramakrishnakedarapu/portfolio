@@ -1,0 +1,329 @@
+body{
+    background-image: url("https://w0.peakpx.com/wallpaper/20/744/HD-wallpaper-black-pattern-black-design-modern-thumbnail.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+#home{
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    padding: 0px 5px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav ul{
+    background-color: inherit;
+}
+nav ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: auto;
+    margin-block-end: auto;
+    margin-inline-start: auto;
+    margin-inline-end: 10vmax;
+    padding-inline-start: 40px;
+    padding-inline-end: 0px;
+}
+nav ul li a{
+    color: white;
+    display: flex;
+    text-decoration: none;
+    font-size: 18px;
+    position:relative;
+    justify-content: space-between;
+}
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    bottom: -6px;
+    background: rgb(129, 255, 213);
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 30px;
+    justify-content: space-between;
+}
+.text{
+    margin-top: 15%;
+    font-size: 30px;
+}
+.text h1{
+    font-size: 60px;
+    margin-top: 20px;
+    color: white;
+}
+h1{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing;
+    animation-duration: 3.0s;
+    animation-timing-function: steps(30, end);
+    animation-fill-mode: forwards;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+p{
+    color: white;
+    font-size: 25px;
+    color: #ababab;
+}
+.text h1 span{
+    color: darksalmon;
+}
+#about{
+    padding: 100px 0;
+    color: #ababab;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.column1{
+    flex-basis: 35%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+h2{
+   text-align: center;
+   margin-bottom: 30px
+}
+.column2{
+    flex-basis: auto;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links span{
+    color: whitesmoke;
+    margin-top: 5px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    color: whitesmoke;
+    gap: 10px;
+}
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: aqua;
+    font-size: 15px;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+#services{
+    padding: 30px 0;
+}
+.service{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.service div{
+    background: inherit;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+h3{
+    text-align: center;
+}
+.service div h4{
+    color: aqua;
+    font-size: 30px;
+    font-weight: 500;
+}
+.service div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.service div:hover{
+    background: rgb(97, 93, 212);
+    transform: translateY(-10px);
+}
+#contact{
+    padding: 30px 0;
+
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact_right{
+    flex-basis: 60%;
+}
+h5{
+    text-align: left;
+    font-size: 70px;
+    font-weight: bold;
+    color: white;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: red;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.contact_right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: black;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form button{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.icons{
+    margin-top: 30px;
+}
+.icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.icons a:hover{
+    color: red;
+    transform: translateY(-5px);
+}
+.btn{
+    display: inline-block;
+    background: red;
+}
+.fa-brands{
+    font-weight: 400;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.portfolio-website{
+    width: 100%;
+    text-align: center;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 50px;
+    padding: 20px 0 20px 0;
+}
+.portfolio-website p{
+    color: white;
+    text-align: center;
+}
+.portfolio-website i{
+    color: red;
+}
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width:600px){
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: auto;
+        left: auto;
+        cursor: pointer;
+    }
+    .contact-left,.contact_right{
+        flex-basis: 100%;
+    }
+    .portfolio-website{
+        font-size: 14px;
+    }
+}
+#msg{
+    color: green;
+    margin-top: -40px;
+    display: block;
+}
